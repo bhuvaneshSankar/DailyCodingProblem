@@ -1,4 +1,4 @@
-public class MatrixProdExcep{
+public class MatrixProdExcep{       /*compute product of all the elements in the matrix except elem at current index without using division*/
     public static void printProd(int[] arr, int length){
         int[] leftArr = new int[length-1];
         int[] rightArr = new int[length-1];
@@ -13,8 +13,6 @@ public class MatrixProdExcep{
             rightArr[i] = rightMul * arr[length-1-i];
             rightMul = rightArr[i];
         }
-     //   printArr(leftArr, length-1);
-     //   printArr(rightArr, length-1);
         for(i=0; i<length; i++){
             if(i==0)
                 System.out.print(rightArr[length-2]+" ");
@@ -25,11 +23,7 @@ public class MatrixProdExcep{
         }
         
     }
-    public static void printArr(int[] arr, int length){
-        System.out.println();
-        for(int i=0; i<length; i++)
-            System.out.print(arr[i]+" ");
-    }
+    
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5};
         printProd(arr, arr.length);
