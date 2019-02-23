@@ -1,5 +1,5 @@
 public class PairsWithGivenTarget{
-    public void mergeSort(int[] arr, int start, int end){
+    public void mergeSort(int[] arr, int start, int end){   //t(c) = o(nlogn) 
         if(start<end){
             int mid = (start+end)/2;
             mergeSort(arr, start, mid);
@@ -34,7 +34,7 @@ public class PairsWithGivenTarget{
         for(int i=0; i<length; i++)
             System.out.print(arr[i]+" ");
     }
-    public void findPairsMatrix(int[] arr, int target){
+    public void findPairsMatrix(int[] arr, int target){  //efficient than o(n*n)
         int length = arr.length;
         mergeSort(arr, 0, length-1);
         printArr(arr, length);
