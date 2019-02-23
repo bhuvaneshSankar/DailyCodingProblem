@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>   //serialization - storing a binary tree into an array, deserialization - array to binary tree
 #include<stdlib.h>
 #include<string.h>
 struct node{
