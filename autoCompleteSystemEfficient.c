@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h>       // auto complete feature using trie data structure.
+#include<stdlib.h>      //trie time complexity for search, insertion, deletion is o(n) where n is the length of the string
 #include<stdbool.h>
 #include<string.h>
 
