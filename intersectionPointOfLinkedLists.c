@@ -1,6 +1,8 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<stdbool.h>
+#include<stdio.h>        // There are two singly linked lists in a system. By some programming error, 
+#include<stdlib.h>       //the end node of one of the linked list got linked to the second list, 
+#include<stdbool.h>      //forming an inverted Y shaped list. Write a program to get the point where two linked list merge.                   
+                         
+
 
 struct Node{
     int data;
@@ -107,8 +109,8 @@ int main(){
   head1->next->next->next = NULL; 
 
     struct Node* intersectNode;
-    intersectNode = getIntersectNodeByBruteForce(head1, head2);
- //   intersectNode = getIntersectNodeByVisited(head1, head2);
- //   intersectNode = getIntersectNodeByDiffNodes(head1, head2);
+    intersectNode = getIntersectNodeByBruteForce(head1, head2);    //o(m*n)
+ //   intersectNode = getIntersectNodeByVisited(head1, head2);     //o(m+n) but requires extra space for visited in all the nodes
+ //   intersectNode = getIntersectNodeByDiffNodes(head1, head2);   //o(m+n) no extraspace
     printf("%d ", intersectNode->data);
 }
